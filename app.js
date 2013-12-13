@@ -153,8 +153,10 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
       console.log('Creating useful graphs from mongodb data.');
       // Format HTML
       var htmlOutput = '<html><head><title>WebPageTest Results</title></head><body>' +
+                       '<link href="stylesheets/graph.css" media="all" rel="stylesheet" />' +
+                       '<div id="demo"><p></p></div>' +
                        '<script>var JSONData = ' + JSON.stringify(results) + ';</script>' +
-                       '<script src="javascripts/d3.v3.min.js"></script>' +
+                       '<script src="javascripts/d3.v3/d3.v3.min.js"></script>' +
                        '<script src="javascripts/graph-config.js"></script>' +
                        '</body></html>';
 
