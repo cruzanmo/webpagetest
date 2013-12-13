@@ -1,7 +1,8 @@
 .DS_STORE
 .idea
 
-modules
+node_modules
+mongodb
 
 key.js
 results.html
