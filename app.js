@@ -12,8 +12,57 @@ var wpt = new WebPageTest('www.webpagetest.org', key.appKey);
  * Limited to 200 requests/day by our public key
  */
 var testPages = [
-  {'url': 'http://nymag.com'}
-  //'http://nymag.com/daily/intelligencer/2013/12/ray-kelly-ten-man-security-team.html'
+  {
+    'brand': 'NY Mag',
+    'type': 'homepage',
+    'url': 'http://nymag.com'
+  },
+  {
+    'brand': 'Vulture',
+    'type': 'article',
+    'url': 'http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
+  },
+  {
+    'brand': 'The Cut',
+    'type': 'article',
+    'url': 'http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
+  },
+  {
+    'brand': 'Grub Street',
+    'type': 'article',
+    'url': 'http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
+  },
+  {
+    'brand': 'Vulture',
+    'type': 'homepage',
+    'url': 'http://www.vulture.com/'
+  },
+  {
+    'brand': 'The Cut',
+    'type': 'homepage',
+    'url': 'http://nymag.com/thecut/'
+  },
+  {
+    'brand': 'Grub Street',
+    'type': 'homepage',
+    'url': 'http://www.grubstreet.com/'
+  },
+  {
+    'brand': 'NY Mag',
+    'type': 'restaurant picks',
+    'url': 'http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
+  },
+  {
+    'brand': 'The Cut',
+    'type': 'slideshow',
+    'url': 'http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
+  }
+
 ];
 
 mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db) {
@@ -25,8 +74,8 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
     'totalSuccess': 0,
     'totalFail': 0,
     'start' : function() {
-      //requestFromWebpagetest();
-      createGraphs();
+      requestFromWebpagetest();
+      //createGraphs();
     },
     'moveOn': function(error) {
       if ( ! error) {
@@ -42,7 +91,7 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
     },
     'done': function() {
       console.log('Total pages tested: ' + this.totalSuccess + '. Total pages not tested: ' + this.totalFail + '.');
-      db.close();
+      //db.close();
     }
   };
 
@@ -62,18 +111,21 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
             if (err) {
               progress.moveOn(err);
             } else {
+              var minutesToWait = 5;
               switch (Math.floor(data.response.statusCode/100)) {
                 case 1:
-                  console.log('Results still in progress for ' + testPage.url + '. Trying again in 2 minutes.');
-                  totalWaitMinutes += 2;
-                  if (totalWaitMinutes > 10) {
-                    progress.moveOn('Aborting: response took more than 10 minutes.');
+                  console.log('Results still in progress for ' + testPage.url + '. Trying again in ' + minutesToWait + ' minutes.');
+                  totalWaitMinutes += minutesToWait;
+                  if (totalWaitMinutes > minutesToWait*10) {
+                    progress.moveOn('Aborting: response took more than ' + (minutesToWait*10) + ' minutes.');
                   } else {
-                    setTimeout(checkForResults,2*60*1000);
+                    setTimeout(checkForResults,minutesToWait*60*1000);
                   }
                   break;
                 case 2:
                   console.log('Results receieved for ' + testPage.url);
+                  // add page information to results object
+                  data.page = testPage;
                   db.collection('results').insert(data, function(err, inserted) {
                     if (err) console.log(err.message);
                     console.dir(testPage.url + ' successfully saved to database.');
@@ -92,8 +144,8 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
   }
 
   function createGraphs() {
-    // Query mongodb for:
-    /*
+
+    /* Query mongodb for:
 
      response.data.completed == date of test
      response.data.testUrl == test url
@@ -154,24 +206,25 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
       // Format HTML
       var htmlOutput = '<html><head><title>WebPageTest Results</title></head><body>' +
                        '<link href="stylesheets/graph.css" media="all" rel="stylesheet" />' +
-                       '<div id="demo"><p></p></div>' +
                        '<script>var JSONData = ' + JSON.stringify(results) + ';</script>' +
                        '<script src="javascripts/d3.v3/d3.v3.min.js"></script>' +
                        '<script src="javascripts/graph-config.js"></script>' +
                        '</body></html>';
 
       // Save to file
-      fs.writeFile("public/results.html", htmlOutput, function(err) {
+      var resultsFile = __dirname + '/public/results.html';
+      fs.writeFile(resultsFile , htmlOutput, function(err) {
         if(err) {
           console.log(err);
         } else {
-          console.log("Results saved to public/results.html!");
+          console.log('Results saved to ' + resultsFile + '!');
         }
       });
 
 
     });
-/*
+
+    /*
     console.log('Creating useful graphs from mongodb data.');
     console.log('Generate graphs (using package?).');
     console.log('Save html graph file or image?.');

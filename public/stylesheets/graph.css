@@ -1,3 +1,4 @@
+/*
 svg {
   vertical-align: middle;
   background: rgba(255,255,255, 0.2);
@@ -30,4 +31,26 @@ svg circle:active {
 .action-button.destroy {
   border: 1px solid #863636;
   background-color: rgba(197, 86, 86, 0.6);
+}
+*/
+
+
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
 }
