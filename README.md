@@ -15,6 +15,8 @@ create useful graphs with webpagetest
 *Add mongo .plist file*
 - sudo nano /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - paste in:
+<code>
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -49,9 +51,13 @@ create useful graphs with webpagetest
 </dict>
 </plist>
 
+</code>
+
 *Add node app .plist file*
 - sudo nano /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - paste in:
+<code>
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -84,6 +90,8 @@ create useful graphs with webpagetest
   </dict>
 </dict>
 </plist>
+
+</code>
 
 *unload the launchd files if you made changes*
 - sudo launchctl unload /Library/LaunchAgents/org.mongodb.mongod.root.plist
