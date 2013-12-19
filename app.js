@@ -21,14 +21,9 @@ var testPages = [
     'url': 'http://nymag.com'
   },
   {
-    'brand': 'Vulture',
-    'type': 'article',
-    'url': 'http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
-  },
-  {
-    'brand': 'The Cut',
-    'type': 'article',
-    'url': 'http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
+    'brand': 'NY Mag',
+    'type': 'restaurant picks',
+    'url': 'http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
   },
   {
     'brand': 'Daily Intel',
@@ -36,14 +31,14 @@ var testPages = [
     'url': 'http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
   },
   {
-    'brand': 'Grub Street',
-    'type': 'article',
-    'url': 'http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
-  },
-  {
     'brand': 'Vulture',
     'type': 'homepage',
     'url': 'http://www.vulture.com/'
+  },
+  {
+    'brand': 'Vulture',
+    'type': 'article',
+    'url': 'http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
   },
   {
     'brand': 'The Cut',
@@ -51,21 +46,25 @@ var testPages = [
     'url': 'http://nymag.com/thecut/'
   },
   {
-    'brand': 'Grub Street',
-    'type': 'homepage',
-    'url': 'http://www.grubstreet.com/'
-  },
-  {
-    'brand': 'NY Mag',
-    'type': 'restaurant picks',
-    'url': 'http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
+    'brand': 'The Cut',
+    'type': 'article',
+    'url': 'http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
   },
   {
     'brand': 'The Cut',
     'type': 'slideshow',
     'url': 'http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
+  },
+  {
+    'brand': 'Grub Street',
+    'type': 'homepage',
+    'url': 'http://www.grubstreet.com/'
+  },
+  {
+    'brand': 'Grub Street',
+    'type': 'article',
+    'url': 'http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
   }
-
 ];
 
 mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db) {
