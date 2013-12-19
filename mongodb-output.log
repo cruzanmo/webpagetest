@@ -1,0 +1,26 @@
+Thu Dec 19 09:10:35.606 [initandlisten] MongoDB starting : pid=3004 port=55555 dbpath=/data/db/ 64-bit host=MCroney-iMac-27.local
+Thu Dec 19 09:10:35.607 [initandlisten] 
+Thu Dec 19 09:10:35.607 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Thu Dec 19 09:10:35.607 [initandlisten] db version v2.4.7
+Thu Dec 19 09:10:35.607 [initandlisten] git version: 0161738abf06c1f067b56a465b706efd6f4bf2aa
+Thu Dec 19 09:10:35.607 [initandlisten] build info: Darwin bs-osx-106-x86-64-2.10gen.cc 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Thu Dec 19 09:10:35.607 [initandlisten] allocator: system
+Thu Dec 19 09:10:35.607 [initandlisten] options: { port: 55555 }
+Thu Dec 19 09:10:35.608 [initandlisten] journal dir=/data/db/journal
+Thu Dec 19 09:10:35.608 [initandlisten] recover : no journal files present, no recovery needed
+Thu Dec 19 09:10:36.114 [websvr] admin web console waiting for connections on port 56555
+Thu Dec 19 09:10:36.114 [initandlisten] waiting for connections on port 55555
+Thu Dec 19 09:17:24.701 [initandlisten] connection accepted from 127.0.0.1:53405 #1 (1 connection now open)
+Thu Dec 19 09:17:24.710 [conn1] end connection 127.0.0.1:53405 (0 connections now open)
+Thu Dec 19 09:17:24.712 [initandlisten] connection accepted from 127.0.0.1:53406 #2 (1 connection now open)
+Thu Dec 19 09:17:24.713 [initandlisten] connection accepted from 127.0.0.1:53407 #3 (2 connections now open)
+Thu Dec 19 09:17:24.713 [initandlisten] connection accepted from 127.0.0.1:53408 #4 (3 connections now open)
+Thu Dec 19 09:17:24.713 [initandlisten] connection accepted from 127.0.0.1:53409 #5 (4 connections now open)
+Thu Dec 19 09:17:24.714 [initandlisten] connection accepted from 127.0.0.1:53410 #6 (5 connections now open)
+Thu Dec 19 09:54:59.733 [conn2] end connection 127.0.0.1:53406 (4 connections now open)
+Thu Dec 19 09:54:59.733 [conn3] end connection 127.0.0.1:53407 (3 connections now open)
+Thu Dec 19 09:54:59.733 [conn4] end connection 127.0.0.1:53408 (2 connections now open)
+Thu Dec 19 09:54:59.733 [conn5] end connection 127.0.0.1:53409 (1 connection now open)
+Thu Dec 19 09:54:59.733 [conn6] end connection 127.0.0.1:53410 (1 connection now open)
+Thu Dec 19 09:59:06.549 [initandlisten] connection accepted from 127.0.0.1:53589 #7 (1 connection now open)
+Thu Dec 19 10:13:48.471 [conn7] end connection 127.0.0.1:53589 (0 connections now open)

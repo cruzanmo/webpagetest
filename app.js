@@ -6,6 +6,9 @@ var key = require("./key");
 var WebPageTest = require('webpagetest');
 var wpt = new WebPageTest('www.webpagetest.org', key.appKey);
 
+var testDate = new Date();
+console.log('Webpagetest initiated at ' + testDate.getHours() + ' on ' + testDate.getFullYear() + '-' + testDate.getMonth() + '-' + testDate.getDate() );
+
 /*
  * Array of pages to test
  * Should be a good cross-section of each unique page type
