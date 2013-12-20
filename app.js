@@ -7,7 +7,10 @@ var WebPageTest = require('webpagetest');
 var wpt = new WebPageTest('www.webpagetest.org', key.appKey);
 
 var testDate = new Date();
-console.log('Webpagetest initiated at ' + testDate.getHours() + ' on ' + testDate.getFullYear() + '-' + testDate.getMonth() + '-' + testDate.getDate() );
+console.log('--------------------------------------------');
+console.log('Webpagetest initiated at ' +
+            testDate.getHours() + ':' + (testDate.getMinutes()<10?'0':'') + testDate.getMinutes() +
+            ' on ' + testDate.getFullYear() + '-' + testDate.getMonth() + '-' + testDate.getDate() );
 
 /*
  * Array of pages to test
@@ -103,7 +106,7 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
         if (err) {
           progress.moveOn(err);
         } else {
-          console.log('Submitting test request for ' + testPage.url);
+          console.log('Request submitted: ' + testPage.url);
           var testId = data.data.testId;
           var totalWaitMinutes = 0;
           checkForResults();
@@ -116,21 +119,21 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
               var minutesToWait = 5;
               switch (Math.floor(data.response.statusCode/100)) {
                 case 1:
-                  console.log('Results still in progress for ' + testPage.url + '. Trying again in ' + minutesToWait + ' minutes.');
+                  console.log('In progress: ' + testPage.url + '. Trying again in ' + minutesToWait + ' minutes.');
                   totalWaitMinutes += minutesToWait;
                   if (totalWaitMinutes > minutesToWait*10) {
-                    progress.moveOn('Aborting: response took more than ' + (minutesToWait*10) + ' minutes.');
+                    progress.moveOn('Abort: ' + testPage.url + '. Waited ' + (minutesToWait*10) + ' minutes.');
                   } else {
                     setTimeout(checkForResults,minutesToWait*60*1000);
                   }
                   break;
                 case 2:
-                  console.log('Results receieved for ' + testPage.url);
+                  console.log('Success: results received: ' + testPage.url);
                   // add page information to results object
                   data.page = testPage;
                   db.collection('results').insert(data, function(err, inserted) {
                     if (err) console.log(err.message);
-                    console.dir(testPage.url + ' successfully saved to database.');
+                    console.dir('Success: saved to database: ' + testPage.url);
                     progress.moveOn();
                   });
                   break;

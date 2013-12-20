@@ -24,3 +24,34 @@ Thu Dec 19 09:54:59.733 [conn5] end connection 127.0.0.1:53409 (1 connection now
 Thu Dec 19 09:54:59.733 [conn6] end connection 127.0.0.1:53410 (1 connection now open)
 Thu Dec 19 09:59:06.549 [initandlisten] connection accepted from 127.0.0.1:53589 #7 (1 connection now open)
 Thu Dec 19 10:13:48.471 [conn7] end connection 127.0.0.1:53589 (0 connections now open)
+Thu Dec 19 15:34:00.139 [initandlisten] MongoDB starting : pid=19803 port=55555 dbpath=/data/db/ 64-bit host=MCroney-iMac-27.local
+Thu Dec 19 15:34:00.139 [initandlisten] 
+Thu Dec 19 15:34:00.139 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Thu Dec 19 15:34:00.139 [initandlisten] db version v2.4.7
+Thu Dec 19 15:34:00.139 [initandlisten] git version: 0161738abf06c1f067b56a465b706efd6f4bf2aa
+Thu Dec 19 15:34:00.139 [initandlisten] build info: Darwin bs-osx-106-x86-64-2.10gen.cc 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Thu Dec 19 15:34:00.139 [initandlisten] allocator: system
+Thu Dec 19 15:34:00.139 [initandlisten] options: { port: 55555 }
+Thu Dec 19 15:34:00.139 [initandlisten] exception in initAndListen: 10310 Unable to lock file: /data/db/mongod.lock. Is a mongod instance already running?, terminating
+Thu Dec 19 15:34:00.139 dbexit: 
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: going to close listening sockets...
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: going to flush diaglog...
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: going to close sockets...
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: lock for final commit...
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: final commit...
+Thu Dec 19 15:34:00.139 [initandlisten] shutdown: closing all files...
+Thu Dec 19 15:34:00.139 [initandlisten] closeAllFiles() finished
+Thu Dec 19 15:34:00.139 dbexit: really exiting now
+Fri Dec 20 09:16:10.181 [initandlisten] connection accepted from 127.0.0.1:61038 #8 (1 connection now open)
+Fri Dec 20 09:16:10.190 [conn8] end connection 127.0.0.1:61038 (0 connections now open)
+Fri Dec 20 09:16:10.192 [initandlisten] connection accepted from 127.0.0.1:61039 #9 (1 connection now open)
+Fri Dec 20 09:16:10.193 [initandlisten] connection accepted from 127.0.0.1:61040 #10 (2 connections now open)
+Fri Dec 20 09:16:10.193 [initandlisten] connection accepted from 127.0.0.1:61041 #11 (3 connections now open)
+Fri Dec 20 09:16:10.194 [initandlisten] connection accepted from 127.0.0.1:61042 #12 (4 connections now open)
+Fri Dec 20 09:16:10.194 [initandlisten] connection accepted from 127.0.0.1:61043 #13 (5 connections now open)
+Fri Dec 20 09:54:40.582 [conn9] end connection 127.0.0.1:61039 (4 connections now open)
+Fri Dec 20 09:54:40.582 [conn10] end connection 127.0.0.1:61040 (3 connections now open)
+Fri Dec 20 09:54:40.582 [conn11] end connection 127.0.0.1:61041 (2 connections now open)
+Fri Dec 20 09:54:40.582 [conn12] end connection 127.0.0.1:61042 (1 connection now open)
+Fri Dec 20 09:54:40.582 [conn13] end connection 127.0.0.1:61043 (0 connections now open)

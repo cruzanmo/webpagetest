@@ -8,6 +8,11 @@ console.log(fullPath);
 
 var testDate = new Date();
 console.log('Webpagetest initiated at ' + testDate.getHours() + ' on ' + testDate.getFullYear() + '-' + testDate.getMonth() + '-' + testDate.getDate() );
+var testDate = new Date();
+console.log('--------------------------------------------');
+console.log('Webpagetest initiated at ' +
+  testDate.getHours() + ':' + (testDate.getMinutes()<10?'0':'') + testDate.getMinutes() +
+  ' on ' + testDate.getFullYear() + '-' + testDate.getMonth() + '-' + testDate.getDate() );
 
 /*
 mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db) {
