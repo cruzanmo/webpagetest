@@ -17,7 +17,10 @@ console.log('Webpagetest initiated at ' +
  * Should be a good cross-section of each unique page type
  * Limited to 200 requests/day by our public key
  */
+
 var testPages = [
+
+  // NYM: Check with product manager for more URLs
   {
     'brand': 'NY Mag',
     'type': 'homepage',
@@ -33,6 +36,9 @@ var testPages = [
     'type': 'article',
     'url': 'http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
   },
+
+  // Vultre: Confirmed with Eve
+  // For Vulture: homepage and articles. Article types: TV Recaps, Slideshows, and everything else.
   {
     'brand': 'Vulture',
     'type': 'homepage',
@@ -43,6 +49,18 @@ var testPages = [
     'type': 'article',
     'url': 'http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
   },
+  {
+    'brand': 'Vulture',
+    'type': 'slideshow',
+    'url': 'http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002'
+  },
+  {
+    'brand': 'Vulture',
+    'type': 'article: tv recap',
+    'url': 'http://www.vulture.com/tv/breaking-bad/'
+  },
+
+  // The Cut: Check with product manager for more URLs
   {
     'brand': 'The Cut',
     'type': 'homepage',
@@ -58,6 +76,8 @@ var testPages = [
     'type': 'slideshow',
     'url': 'http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
   },
+
+  // Grub Street: Confirmed with Justin
   {
     'brand': 'Grub Street',
     'type': 'homepage',
