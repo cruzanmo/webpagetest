@@ -57,7 +57,7 @@ var testPages = [
   {
     'brand': 'Vulture',
     'type': 'article: tv recap',
-    'url': 'http://www.vulture.com/tv/breaking-bad/'
+    'url': 'http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html'
   },
 
   // The Cut: Check with product manager for more URLs
