@@ -1,0 +1,46 @@
+.graph {
+  position: relative;
+  width:100%;
+  border-left:1px solid #000;
+  border-bottom:1px solid #000;
+  height:800px;
+}
+.col {
+  position: absolute;
+  width: 10px;
+  height: 800px;
+  margin: 0 5px 0 0;
+  bottom: 0;
+}
+.bar {
+  position: absolute;
+  width:100%;
+  left:0;
+}
+.bar.firstByte {
+  background-color: cornflowerblue;
+}
+.bar.firstPaint {
+  background-color: blue;
+}
+.bar.titleLoad {
+  background-color: blanchedalmond;
+}
+.bar.docReadyStart {
+  background-color: bisque;
+}
+.bar.docReadyEnd {
+  background-color: blueviolet;
+}
+.bar.docLoadStart {
+  background-color: #00d4b4;
+}
+.bar.docLoadEnd {
+  background-color: #fb2081;
+}
+.bar.loaded {
+  background-color: lightblue;
+}
+.bar.visuallyComplete {
+  background-color: darkslateblue;
+}
