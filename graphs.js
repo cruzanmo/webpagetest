@@ -2,9 +2,6 @@
 
 var fs = require('fs');
 var mongoClient = require('mongodb').MongoClient;
-var key = require("./key");
-var WebPageTest = require('webpagetest');
-var wpt = new WebPageTest('www.webpagetest.org', key.appKey);
 
 var testDate = new Date();
 console.log('--------------------------------------------');
@@ -95,14 +92,6 @@ var testPages = [
   }
 ];
 
-// Convert date string to iso date. Current format is like Date.toString(): "Thu, 02 Jan 2014 14:25:27 +0000"
-var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-function convertToIso(dateString) {
-  var newDate = new Date(dateString.substr(12,4),months.indexOf(dateString.substr(8,3)),dateString.substr(5,2),(parseInt(dateString.substr(17,2))-5),dateString.substr(20,2),dateString.substr(23,2));
-  var isoDate = newDate.toISOString();
-  return isoDate;
-}
-
 mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db) {
 
   if (err) throw err;
@@ -133,55 +122,6 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
     }
   };
 
-  function requestFromWebpagetest() {
-    testPages.forEach(function(testPage, i, a){
-      wpt.runTest(testPage.url, function(err, data) {
-        if (err) {
-          progress.moveOn(err);
-        } else {
-          console.log('Request submitted: ' + testPage.url);
-          var testId = data.data.testId;
-          var totalWaitMinutes = 0;
-          checkForResults();
-        }
-        function checkForResults() {
-          wpt.getTestResults(testId, function(err, data) {
-            if (err) {
-              progress.moveOn(err);
-            } else {
-              var minutesToWait = 5;
-              switch (Math.floor(data.response.statusCode/100)) {
-                case 1:
-                  console.log('In progress: ' + testPage.url + '. Trying again in ' + minutesToWait + ' minutes.');
-                  totalWaitMinutes += minutesToWait;
-                  if (totalWaitMinutes > minutesToWait*10) {
-                    progress.moveOn('Abort: ' + testPage.url + '. Waited ' + (minutesToWait*10) + ' minutes.');
-                  } else {
-                    setTimeout(checkForResults,minutesToWait*60*1000);
-                  }
-                  break;
-                case 2:
-                  console.log('Success: results received: ' + testPage.url);
-                  // add page information to results object
-                  data.page = testPage;
-                  // convert to iso date
-                  data.response.data.completed = convertToIso(data.response.data.completed);
-                  db.collection('results').insert(data, function(err, inserted) {
-                    if (err) console.log(err.message);
-                    console.dir('Success: saved to database: ' + testPage.url);
-                    progress.moveOn();
-                  });
-                  break;
-                default:
-                  progress.moveOn('Error: ' + data.response.statusCode + ' ' + data.response.statusText);
-                  break;
-              }
-            }
-          });
-        }
-      });
-    });
-  }
 
   function createGraphs() {
 
@@ -275,8 +215,7 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
     */
   }
 
+  createGraphs();
 
-  // Start the process
-  progress.start();
 
 });
