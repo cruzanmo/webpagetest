@@ -6,49 +6,78 @@ html {
   line-height: 1;
 }
 html,body {
-   width:100%;
-   height:100%;
- }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 .graph {
   position: relative;
-  width:100%;
-  border-left:1px solid #000;
   border-bottom:1px solid #000;
-  height:600px;
+  border-left:1px solid #000;
+  height:1000px;
+  width:95%;
+  margin:2.5%;
+}
+.y-label {
+  position:absolute;
+  left:-2.5%;
+  width:2.5%;
+  text-align: right;
 }
 .col {
-  position: absolute;
   bottom: 0;
+  position: absolute;
+}
+.col h1 {
+  font-size: .8rem;
+  position: absolute;
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  z-index: 2;
+  left:0;
+  bottom:0;
 }
 .bar {
+  left:0;
   position: absolute;
   width:100%;
-  left:0;
 }
-.bar.firstByte {
-  background-color: cornflowerblue;
+.firstByte {
+  background-color: #5f0065;
 }
-.bar.firstPaint {
-  background-color: blue;
+.firstPaint {
+  background-color: #8a008a;
 }
-.bar.titleLoad {
-  background-color: blanchedalmond;
+.titleLoad {
+  background-color: #ae00aa;
 }
-.bar.docReadyStart {
-  background-color: bisque;
+.docReadyStart {
+  background-color: #d300cb;
 }
-.bar.docReadyEnd {
-  background-color: blueviolet;
+.docReadyEnd {
+  background-color: #fa00f0;
 }
-.bar.docLoadStart {
-  background-color: #00d4b4;
+.docLoadStart {
+  background-color: #006ecf;
 }
-.bar.docLoadEnd {
-  background-color: #fb2081;
+.docLoadEnd {
+  background-color: #00a2ff;
 }
-.bar.loaded {
-  background-color: lightblue;
+.loaded {
+  background-color: #00d167;
 }
-.bar.visuallyComplete {
-  background-color: darkslateblue;
+.visuallyComplete {
+  background-color: #00ff90;
+}
+.key h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  width:300px;
+  padding:5px;
+  margin:1px;
+  color: #fff;
+  border-radius: .2rem;
+  letter-spacing: .1rem;
 }

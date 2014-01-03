@@ -234,6 +234,7 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
       },
       {
         $sort: {
+          url: 1,
           date: 1
         }
       }

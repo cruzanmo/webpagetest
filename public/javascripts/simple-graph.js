@@ -29,9 +29,6 @@ var label = "url";
 var xAxis = "date";
 var yAxis = ["firstByte","firstPaint","titleLoad","docReadyStart","docReadyEnd","docLoadStart","docLoadEnd","loaded","visuallyComplete"];
 
-document.getElementById('graph').style.width = (colWidth * (totalCols+1)) + 'px';
-document.getElementById('graph').style.height = (totalHeight) + 'px';
-
 //get the scale
 var maxHeight = 0;
 for (var i=0;i<totalCols;i++){
@@ -46,6 +43,12 @@ for (var i=0;i<totalCols;i++){
 }
 var scale = totalHeight/maxHeight;
 
+// add labels to y axis
+var labelCount = 10;
+var labelIncrement = maxHeight/labelCount;
+for(var currentLabel=0;currentLabel<labelCount;currentLabel++) {
+  document.getElementById('graph').innerHTML += '<div class="y-label" style="bottom:'+(currentLabel*labelIncrement*scale)+'px;">'+(currentLabel*labelIncrement/1000)+'</div>';
+}
 
 //go through the JSONData array
 for (var i=0;i<totalCols;i++){
@@ -53,7 +56,7 @@ for (var i=0;i<totalCols;i++){
   // add column to the graph
   document.getElementById('graph').innerHTML += '<div id="col-'+i+'" class="col" ' +
     'style="left:'+((i+1)*(colWidth+colRightMargin))+'px;height:' + totalHeight + 'px;width:' + colWidth + 'px;margin-right:' + colRightMargin + 'px;"' +
-    '></div>';
+    '><h1>'+JSONData[i].url+'</h1></div>';
   var colHeight = 0;
 
   // each bar in the column
@@ -68,5 +71,16 @@ for (var i=0;i<totalCols;i++){
   }
 
 }
+
+// display the key
+var key = '<div class="key">';
+for (var i=yAxis.length;i>=0;i--){
+  key += '<h2 class="'+yAxis[i]+'">'+yAxis[i]+'</h2>';
+}
+key += '</div>';
+document.body.innerHTML += key;
+
+
+
 
 
