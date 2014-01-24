@@ -154,8 +154,8 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
                 case 1:
                   console.log('In progress: ' + testPage.url + '. Trying again in ' + minutesToWait + ' minutes.');
                   totalWaitMinutes += minutesToWait;
-                  if (totalWaitMinutes > minutesToWait*10) {
-                    progress.moveOn('Abort: ' + testPage.url + '. Waited ' + (minutesToWait*10) + ' minutes.');
+                  if (totalWaitMinutes > minutesToWait*15) {
+                    progress.moveOn('Abort: ' + testPage.url + '. Waited ' + (minutesToWait*15) + ' minutes.');
                   } else {
                     setTimeout(checkForResults,minutesToWait*60*1000);
                   }
