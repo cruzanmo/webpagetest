@@ -536,3 +536,70 @@ Fri Jan 24 09:20:21.683 [conn216] end connection 127.0.0.1:56410 (3 connections 
 Fri Jan 24 09:20:21.683 [conn217] end connection 127.0.0.1:56411 (2 connections now open)
 Fri Jan 24 09:20:21.683 [conn218] end connection 127.0.0.1:56412 (1 connection now open)
 Fri Jan 24 09:20:21.683 [conn219] end connection 127.0.0.1:56413 (0 connections now open)
+Sat Jan 25 09:15:49.891 [initandlisten] connection accepted from 127.0.0.1:63027 #220 (1 connection now open)
+Sat Jan 25 09:15:49.898 [conn220] end connection 127.0.0.1:63027 (0 connections now open)
+Sat Jan 25 09:15:49.900 [initandlisten] connection accepted from 127.0.0.1:63028 #221 (1 connection now open)
+Sat Jan 25 09:15:49.901 [initandlisten] connection accepted from 127.0.0.1:63029 #222 (2 connections now open)
+Sat Jan 25 09:15:49.901 [initandlisten] connection accepted from 127.0.0.1:63030 #223 (3 connections now open)
+Sat Jan 25 09:15:49.902 [initandlisten] connection accepted from 127.0.0.1:63031 #224 (4 connections now open)
+Sat Jan 25 09:15:49.902 [initandlisten] connection accepted from 127.0.0.1:63032 #225 (5 connections now open)
+Sat Jan 25 09:20:51.336 [conn221] end connection 127.0.0.1:63028 (4 connections now open)
+Sat Jan 25 09:20:51.336 [conn222] end connection 127.0.0.1:63029 (3 connections now open)
+Sat Jan 25 09:20:51.336 [conn224] end connection 127.0.0.1:63031 (2 connections now open)
+Sat Jan 25 09:20:51.336 [conn225] end connection 127.0.0.1:63032 (2 connections now open)
+Sat Jan 25 09:20:51.336 [conn223] end connection 127.0.0.1:63030 (2 connections now open)
+Sun Jan 26 09:15:48.023 [initandlisten] connection accepted from 127.0.0.1:63293 #226 (1 connection now open)
+Sun Jan 26 09:15:48.031 [conn226] end connection 127.0.0.1:63293 (0 connections now open)
+Sun Jan 26 09:15:48.033 [initandlisten] connection accepted from 127.0.0.1:63294 #227 (1 connection now open)
+Sun Jan 26 09:15:48.034 [initandlisten] connection accepted from 127.0.0.1:63295 #228 (2 connections now open)
+Sun Jan 26 09:15:48.034 [initandlisten] connection accepted from 127.0.0.1:63296 #229 (3 connections now open)
+Sun Jan 26 09:15:48.035 [initandlisten] connection accepted from 127.0.0.1:63297 #230 (4 connections now open)
+Sun Jan 26 09:15:48.035 [initandlisten] connection accepted from 127.0.0.1:63298 #231 (5 connections now open)
+Sun Jan 26 09:20:49.562 [conn227] end connection 127.0.0.1:63294 (4 connections now open)
+Sun Jan 26 09:20:49.563 [conn228] end connection 127.0.0.1:63295 (4 connections now open)
+Sun Jan 26 09:20:49.563 [conn229] end connection 127.0.0.1:63296 (2 connections now open)
+Sun Jan 26 09:20:49.563 [conn230] end connection 127.0.0.1:63297 (2 connections now open)
+Sun Jan 26 09:20:49.563 [conn231] end connection 127.0.0.1:63298 (0 connections now open)
+Mon Jan 27 09:15:46.832 [initandlisten] connection accepted from 127.0.0.1:63571 #232 (1 connection now open)
+Mon Jan 27 09:15:46.839 [conn232] end connection 127.0.0.1:63571 (0 connections now open)
+Mon Jan 27 09:15:46.841 [initandlisten] connection accepted from 127.0.0.1:63572 #233 (1 connection now open)
+Mon Jan 27 09:15:46.841 [initandlisten] connection accepted from 127.0.0.1:63573 #234 (2 connections now open)
+Mon Jan 27 09:15:46.842 [initandlisten] connection accepted from 127.0.0.1:63574 #235 (3 connections now open)
+Mon Jan 27 09:15:46.842 [initandlisten] connection accepted from 127.0.0.1:63575 #236 (4 connections now open)
+Mon Jan 27 09:15:46.843 [initandlisten] connection accepted from 127.0.0.1:63576 #237 (5 connections now open)
+Mon Jan 27 09:20:48.401 [conn233] end connection 127.0.0.1:63572 (4 connections now open)
+Mon Jan 27 09:20:48.401 [conn234] end connection 127.0.0.1:63573 (4 connections now open)
+Mon Jan 27 09:20:48.401 [conn235] end connection 127.0.0.1:63574 (2 connections now open)
+Mon Jan 27 09:20:48.401 [conn237] end connection 127.0.0.1:63576 (2 connections now open)
+Mon Jan 27 09:20:48.401 [conn236] end connection 127.0.0.1:63575 (0 connections now open)
+Tue Jan 28 09:16:44.867 [initandlisten] connection accepted from 127.0.0.1:55478 #238 (1 connection now open)
+Tue Jan 28 09:16:44.874 [conn238] end connection 127.0.0.1:55478 (0 connections now open)
+Tue Jan 28 09:16:44.876 [initandlisten] connection accepted from 127.0.0.1:55479 #239 (1 connection now open)
+Tue Jan 28 09:16:44.876 [initandlisten] connection accepted from 127.0.0.1:55480 #240 (2 connections now open)
+Tue Jan 28 09:16:44.877 [initandlisten] connection accepted from 127.0.0.1:55481 #241 (3 connections now open)
+Tue Jan 28 09:16:44.877 [initandlisten] connection accepted from 127.0.0.1:55482 #242 (4 connections now open)
+Tue Jan 28 09:16:44.878 [initandlisten] connection accepted from 127.0.0.1:55483 #243 (5 connections now open)
+Tue Jan 28 09:21:46.556 [conn239] end connection 127.0.0.1:55479 (4 connections now open)
+Tue Jan 28 09:21:46.556 [conn240] end connection 127.0.0.1:55480 (4 connections now open)
+Tue Jan 28 09:21:46.556 [conn241] end connection 127.0.0.1:55481 (2 connections now open)
+Tue Jan 28 09:21:46.556 [conn242] end connection 127.0.0.1:55482 (1 connection now open)
+Tue Jan 28 09:21:46.556 [conn243] end connection 127.0.0.1:55483 (0 connections now open)
+Tue Jan 28 16:07:27.754 [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+Tue Jan 28 16:07:27.859 [signalProcessingThread] now exiting
+Tue Jan 28 16:07:27.859 dbexit: 
+Tue Jan 28 16:07:27.859 [signalProcessingThread] shutdown: going to close listening sockets...
+Tue Jan 28 16:07:27.859 [signalProcessingThread] closing listening socket: 9
+Tue Jan 28 16:07:27.859 [signalProcessingThread] closing listening socket: 10
+Tue Jan 28 16:07:27.859 [signalProcessingThread] closing listening socket: 11
+Tue Jan 28 16:07:27.859 [signalProcessingThread] removing socket file: /tmp/mongodb-55555.sock
+Tue Jan 28 16:07:27.860 [signalProcessingThread] shutdown: going to flush diaglog...
+Tue Jan 28 16:07:27.860 [signalProcessingThread] shutdown: going to close sockets...
+Tue Jan 28 16:07:27.860 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Tue Jan 28 16:07:27.860 [signalProcessingThread] shutdown: lock for final commit...
+Tue Jan 28 16:07:27.860 [signalProcessingThread] shutdown: final commit...
+Tue Jan 28 16:07:27.864 [signalProcessingThread] shutdown: closing all files...
+Tue Jan 28 16:07:27.865 [signalProcessingThread] closeAllFiles() finished
+Tue Jan 28 16:07:27.865 [signalProcessingThread] journalCleanup...
+Tue Jan 28 16:07:27.865 [signalProcessingThread] removeJournalFiles
+Tue Jan 28 16:07:28.106 [signalProcessingThread] shutdown: removing fs lock...
+Tue Jan 28 16:07:28.106 dbexit: really exiting now

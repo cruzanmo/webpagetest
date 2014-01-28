@@ -1701,3 +1701,223 @@ Success: results received: http://nymag.com/thecut/2012/08/kate-middleton-look-b
 Query MongoDB.
 Creating useful graphs from mongodb data.
 Results saved to /Users/mcroney/_dev/webpagetest/public/results.html!
+--------------------------------------------
+Webpagetest initiated at 9:15 on 2014-01-25
+Request submitted: http://www.vulture.com/
+Request submitted: http://nymag.com
+Request submitted: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+Request submitted: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Request submitted: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Request submitted: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+Request submitted: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+Request submitted: http://nymag.com/thecut/
+Request submitted: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+Request submitted: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+In progress: http://www.vulture.com/. Trying again in 5 minutes.
+In progress: http://nymag.com. Trying again in 5 minutes.
+In progress: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html. Trying again in 5 minutes.
+Request submitted: http://www.grubstreet.com/
+Request submitted: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+In progress: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html. Trying again in 5 minutes.
+In progress: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html. Trying again in 5 minutes.
+Success: results received: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Success: results received: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Success: results received: http://nymag.com
+Success: results received: http://www.vulture.com/
+Success: results received: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+'Success: saved to database: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
+'Success: saved to database: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
+'Success: saved to database: http://nymag.com'
+'Success: saved to database: http://www.vulture.com/'
+'Success: saved to database: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
+Success: results received: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+Success: results received: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+Success: results received: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+Success: results received: http://nymag.com/thecut/
+'Success: saved to database: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002'
+'Success: saved to database: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
+Success: results received: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+'Success: saved to database: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html'
+'Success: saved to database: http://nymag.com/thecut/'
+'Success: saved to database: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
+Success: results received: http://www.grubstreet.com/
+'Success: saved to database: http://www.grubstreet.com/'
+Success: results received: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+'Success: saved to database: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
+Query MongoDB.
+Creating useful graphs from mongodb data.
+Results saved to /Users/mcroney/_dev/webpagetest/public/results.html!
+--------------------------------------------
+Webpagetest initiated at 9:15 on 2014-01-26
+Request submitted: http://www.vulture.com/
+Request submitted: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+Request submitted: http://nymag.com
+Request submitted: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Request submitted: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Request submitted: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+Request submitted: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+Request submitted: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+Request submitted: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+Request submitted: http://nymag.com/thecut/
+In progress: http://www.vulture.com/. Trying again in 5 minutes.
+In progress: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html. Trying again in 5 minutes.
+In progress: http://nymag.com. Trying again in 5 minutes.
+Request submitted: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+Request submitted: http://www.grubstreet.com/
+In progress: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/. Trying again in 5 minutes.
+Success: results received: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+'Success: saved to database: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
+Success: results received: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Success: results received: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+'Success: saved to database: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
+'Success: saved to database: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html'
+Success: results received: http://nymag.com
+Success: results received: http://www.vulture.com/
+'Success: saved to database: http://nymag.com'
+'Success: saved to database: http://www.vulture.com/'
+Success: results received: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+Success: results received: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+Success: results received: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Success: results received: http://nymag.com/thecut/
+'Success: saved to database: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
+'Success: saved to database: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002'
+Success: results received: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+Success: results received: http://www.grubstreet.com/
+'Success: saved to database: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
+'Success: saved to database: http://nymag.com/thecut/'
+'Success: saved to database: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
+'Success: saved to database: http://www.grubstreet.com/'
+Success: results received: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+'Success: saved to database: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
+Query MongoDB.
+Creating useful graphs from mongodb data.
+Results saved to /Users/mcroney/_dev/webpagetest/public/results.html!
+--------------------------------------------
+Webpagetest initiated at 9:15 on 2014-01-27
+Request submitted: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Request submitted: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Request submitted: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+Request submitted: http://www.vulture.com/
+Request submitted: http://nymag.com
+Request submitted: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+Request submitted: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+Request submitted: http://nymag.com/thecut/
+Request submitted: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+Request submitted: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+In progress: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html. Trying again in 5 minutes.
+In progress: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0. Trying again in 5 minutes.
+Request submitted: http://www.grubstreet.com/
+Request submitted: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+In progress: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html. Trying again in 5 minutes.
+In progress: http://www.vulture.com/. Trying again in 5 minutes.
+In progress: http://nymag.com. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html. Trying again in 5 minutes.
+Success: results received: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+'Success: saved to database: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
+Success: results received: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+Success: results received: http://www.vulture.com/
+'Success: saved to database: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
+Success: results received: http://nymag.com
+Success: results received: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+'Success: saved to database: http://www.vulture.com/'
+Success: results received: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Success: results received: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+'Success: saved to database: http://nymag.com'
+'Success: saved to database: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html'
+'Success: saved to database: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
+'Success: saved to database: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002'
+Success: results received: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+Success: results received: http://nymag.com/thecut/
+Success: results received: http://www.grubstreet.com/
+Success: results received: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+'Success: saved to database: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
+'Success: saved to database: http://nymag.com/thecut/'
+Success: results received: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+'Success: saved to database: http://www.grubstreet.com/'
+'Success: saved to database: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
+'Success: saved to database: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
+Query MongoDB.
+Creating useful graphs from mongodb data.
+Results saved to /Users/mcroney/_dev/webpagetest/public/results.html!
+--------------------------------------------
+Webpagetest initiated at 9:16 on 2014-01-28
+Request submitted: http://nymag.com
+Request submitted: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+Request submitted: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+Request submitted: http://www.vulture.com/
+Request submitted: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Request submitted: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+Request submitted: http://nymag.com/thecut/
+Request submitted: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+Request submitted: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+Request submitted: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+In progress: http://nymag.com. Trying again in 5 minutes.
+Request submitted: http://bedfordandbowery.com/
+Request submitted: http://www.grubstreet.com/
+Request submitted: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+Request submitted: http://bedfordandbowery.com/2014/01/joe-galarraga-of-big-ups-is-ok-with-you-making-fun-of-his-musings-about-millennials/
+In progress: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html. Trying again in 5 minutes.
+In progress: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0. Trying again in 5 minutes.
+In progress: http://www.vulture.com/. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/. Trying again in 5 minutes.
+In progress: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/. Trying again in 5 minutes.
+In progress: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html. Trying again in 5 minutes.
+In progress: http://bedfordandbowery.com/. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/. Trying again in 5 minutes.
+In progress: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html. Trying again in 5 minutes.
+In progress: http://bedfordandbowery.com/2014/01/joe-galarraga-of-big-ups-is-ok-with-you-making-fun-of-his-musings-about-millennials/. Trying again in 5 minutes.
+Success: results received: http://www.vulture.com/
+Success: results received: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html
+Success: results received: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html
+Success: results received: http://nymag.com
+Success: results received: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0
+'Success: saved to database: http://www.vulture.com/'
+'Success: saved to database: http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
+'Success: saved to database: http://www.vulture.com/2013/12/saltz-how-not-wait-in-line-for-yayoi-kusama.html'
+'Success: saved to database: http://nymag.com'
+'Success: saved to database: http://nymag.com/srch?t=restaurant&N=265+336&No=0&Ns=nyml_sort_name%7C0'
+Success: results received: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html
+Success: results received: http://nymag.com/thecut/
+Success: results received: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/
+Success: results received: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002
+'Success: saved to database: http://www.vulture.com/2013/12/saturday-night-live-recap-jimmy-fallon.html'
+'Success: saved to database: http://nymag.com/thecut/'
+Success: results received: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html
+'Success: saved to database: http://nymag.com/thecut/2012/08/kate-middleton-look-book/slideshow/2012/07/30/kate_middleton_lookbook/'
+'Success: saved to database: http://www.vulture.com/2013/12/bests-and-worsts-from-the-year-in-entertainment.html#photo=1x00002'
+Success: results received: http://bedfordandbowery.com/
+'Success: saved to database: http://nymag.com/thecut/2013/12/real-reason-20-something-women-are-worried.html'
+Success: results received: http://www.grubstreet.com/
+'Success: saved to database: http://bedfordandbowery.com/'
+Success: results received: http://bedfordandbowery.com/2014/01/joe-galarraga-of-big-ups-is-ok-with-you-making-fun-of-his-musings-about-millennials/
+Success: results received: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html
+'Success: saved to database: http://www.grubstreet.com/'
+'Success: saved to database: http://bedfordandbowery.com/2014/01/joe-galarraga-of-big-ups-is-ok-with-you-making-fun-of-his-musings-about-millennials/'
+'Success: saved to database: http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
+Query MongoDB.
+Creating useful graphs from mongodb data.
+Results saved to /Users/mcroney/_dev/webpagetest/public/results.html!

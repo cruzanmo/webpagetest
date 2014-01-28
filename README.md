@@ -11,11 +11,11 @@ create useful graphs with webpagetest
 *Wake up the machine*
 - sudo pmset repeat wakeorpoweron MTWRFSU 09:00:00
 - pmset -g sched
+- you can also do this in system settings > energy saver > schedule
 
 *Add mongo .plist file*
 - sudo nano /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - paste in:
-<pre>
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -51,12 +51,10 @@ create useful graphs with webpagetest
 </dict>
 </plist>
 
-</pre>
 
 *Add node app .plist file*
 - sudo nano /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - paste in:
-<pre>
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -91,7 +89,7 @@ create useful graphs with webpagetest
 </dict>
 </plist>
 
-</pre>
+
 
 *unload the launchd files if you made changes*
 - sudo launchctl unload /Library/LaunchAgents/org.mongodb.mongod.root.plist

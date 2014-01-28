@@ -92,7 +92,20 @@ var testPages = [
     'brand': 'Grub Street',
     'type': 'article',
     'url': 'http://www.grubstreet.com/2013/12/whole-foods-bryant-park.html'
+  },
+
+  // Bedford + Bowery
+  {
+    'brand': 'Bedford + Bowery',
+    'type': 'homepage',
+    'url': 'http://bedfordandbowery.com/'
+  },
+  {
+    'brand': 'Bedford + Bowery',
+    'type': 'article',
+    'url': 'http://bedfordandbowery.com/2014/01/joe-galarraga-of-big-ups-is-ok-with-you-making-fun-of-his-musings-about-millennials/'
   }
+
 ];
 
 // Convert date string to iso date. Current format is like Date.toString(): "Thu, 02 Jan 2014 14:25:27 +0000"
