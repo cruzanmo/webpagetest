@@ -46,72 +46,72 @@
 
 ### All Data available through webpagetest API
 - https://sites.google.com/a/webpagetest.org/docs/advanced-features/raw-test-results
-"URL" : "http://bedfordandbowery.com/",
-"loadTime" : 22276,
-"TTFB" : 1213,
-"bytesOut" : 62898,
-"bytesOutDoc" : 40282,
-"bytesIn" : 1828058,
-"bytesInDoc" : 1755478,
-"connections" : 86,
-"requests" : 128,
-"requestsDoc" : 93,
-"responses_200" : 111,
-"responses_404" : 0,
-"responses_other" : 9,
-"result" : 99999,
-"render" : 1987,
-"fullyLoaded" : 23380,
-"cached" : 0,
-"docTime" : 22276,
-"domTime" : 0,
-"score_cache" : 29,
-"score_cdn" : 34,
-"score_gzip" : 100,
-"score_cookies" : 82,
-"score_keep-alive" : 95,
-"score_minify" : 100,
-"score_combine" : 0,
-"score_compress" : 73,
-"score_etags" : 55,
-"gzip_total" : 947903,
-"gzip_savings" : 0,
-"minify_total" : 336065,
-"minify_savings" : 0,
-"image_total" : 846176,
-"image_savings" : 220856,
-"optimization_checked" : 1,
-"aft" : 0,
-"domElements" : 1430,
-"pageSpeedVersion" : 1.12,
-"title" : "Bedford + Bowery",
-"titleTime" : 1330,
-"loadEventStart" : 22302,
-"loadEventEnd" : 22394,
-"domContentLoadedEventStart" : 3920,
-"domContentLoadedEventEnd" : 4007,
-"lastVisualChange" : 23009,
-"browser_name" : "Internet Explorer",
-"browser_version" : "9.0.8112.16421",
-"server_count" : 1,
-"server_rtt" : 37,
-"adult_site" : 0,
-"fixed_viewport" : -1,
-"score_progressive_jpeg" : 17,
-"firstPaint" : 1963,
-"docCPUms" : 5538.036,
-"fullyLoadedCPUms" : 6505.242,
-"docCPUpct" : 25,
-"fullyLoadedCPUpct" : 26,
-"isResponsive" : -1,
-"date" : 1390900677,
-"SpeedIndexDT" : 9699,
-"SpeedIndex" : 9699,
-"VisuallyCompleteDT" : 23009,
-"visualComplete" : 23009,
-"renderDT" : 1993,
-"effectiveBps" : 82467,
-"effectiveBpsDoc" : 83344
+- "URL" : "http://bedfordandbowery.com/"
+- "loadTime" : 22276
+- "TTFB" : 1213
+- "bytesOut" : 62898
+- "bytesOutDoc" : 40282
+- "bytesIn" : 1828058
+- "bytesInDoc" : 1755478
+- "connections" : 86
+- "requests" : 128
+- "requestsDoc" : 93
+- "responses_200" : 111
+- "responses_404" : 0
+- "responses_other" : 9
+- "result" : 99999
+- "render" : 1987
+- "fullyLoaded" : 23380
+- "cached" : 0
+- "docTime" : 22276
+- "domTime" : 0
+- "score_cache" : 29
+- "score_cdn" : 34
+- "score_gzip" : 100
+- "score_cookies" : 82
+- "score_keep-alive" : 95
+- "score_minify" : 100
+- "score_combine" : 0
+- "score_compress" : 73
+- "score_etags" : 55
+- "gzip_total" : 947903
+- "gzip_savings" : 0
+- "minify_total" : 336065
+- "minify_savings" : 0
+- "image_total" : 846176
+- "image_savings" : 220856
+- "optimization_checked" : 1
+- "aft" : 0
+- "domElements" : 1430
+- "pageSpeedVersion" : 1.12
+- "title" : "Bedford + Bowery"
+- "titleTime" : 1330
+- "loadEventStart" : 22302
+- "loadEventEnd" : 22394
+- "domContentLoadedEventStart" : 3920
+- "domContentLoadedEventEnd" : 4007
+- "lastVisualChange" : 23009
+- "browser_name" : "Internet Explorer"
+- "browser_version" : "9.0.8112.16421"
+- "server_count" : 1
+- "server_rtt" : 37
+- "adult_site" : 0
+- "fixed_viewport" : -1
+- "score_progressive_jpeg" : 17
+- "firstPaint" : 1963
+- "docCPUms" : 5538.036
+- "fullyLoadedCPUms" : 6505.242
+- "docCPUpct" : 25
+- "fullyLoadedCPUpct" : 26
+- "isResponsive" : -1
+- "date" : 1390900677
+- "SpeedIndexDT" : 9699
+- "SpeedIndex" : 9699
+- "VisuallyCompleteDT" : 23009
+- "visualComplete" : 23009
+- "renderDT" : 1993
+- "effectiveBps" : 82467
+- "effectiveBpsDoc" : 83344
 
 # Setup
 
