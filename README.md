@@ -15,12 +15,12 @@
 ### Data we are graphing
 
 *Page loading events -v2*
-1 First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
-2 "titleTime" - title displays in the browser
-3 Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
-4 Load Event Start = "loadEventStart" - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
-5 Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
-6 Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
+1. First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
+2. "titleTime" - title displays in the browser
+3. Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
+4. Load Event Start = "loadEventStart" - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
+5. Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
+6. Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
 
 *Page loading events -v1*
 - visuallyComplete (loaded and rendered)
