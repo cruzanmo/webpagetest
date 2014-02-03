@@ -11,18 +11,20 @@
 - Review graphs daily, prioritize development, alerts for any performance issues.
 
 # Measures
-- https://sites.google.com/a/webpagetest.org/docs/advanced-features/raw-test-results
+
+### Data we are graphing
 
 *Page loading events -v2*
-- First Byte - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
-- Start Render - The time from the start of navigation until the first non-white content was painted to the screen
-- Load Event Start - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
-- Document Complete - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
-- Fully Loaded - The time from the start of navigation until network activity finished after the onload event
+1 First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
+2 "titleTime" - title displays in the browser
+3 Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
+4 Load Event Start = "loadEventStart" - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
+5 Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
+6 Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
 
 *Page loading events -v1*
 - visuallyComplete (loaded and rendered)
-- loaded
+- loaded = "loadTime" = "docTime"
 - docLoadEnd (Doc loaded)
 - docLoadStart
 - docReadyEnd (DOM is ready)
@@ -34,8 +36,82 @@
 *Downloads*
 - Bytes In (Doc) - The number of bytes downloaded before the Document Complete time
 - Requests (Doc) - The number of http(s) requests before the Document Complete time
+- Speed Index = "SpeedIndex" - The calculated Speed Index (only available when video capture is enabled)
 
-- Speed Index - The calculated Speed Index (only available when video capture is enabled)
+### Data added for each page
+- "page" :
+-- "brand" : "Bedford + Bowery",
+-- "type" : "homepage",
+-- "url" : "http://bedfordandbowery.com/"
+
+### All Data available through webpagetest API
+- https://sites.google.com/a/webpagetest.org/docs/advanced-features/raw-test-results
+"URL" : "http://bedfordandbowery.com/",
+"loadTime" : 22276,
+"TTFB" : 1213,
+"bytesOut" : 62898,
+"bytesOutDoc" : 40282,
+"bytesIn" : 1828058,
+"bytesInDoc" : 1755478,
+"connections" : 86,
+"requests" : 128,
+"requestsDoc" : 93,
+"responses_200" : 111,
+"responses_404" : 0,
+"responses_other" : 9,
+"result" : 99999,
+"render" : 1987,
+"fullyLoaded" : 23380,
+"cached" : 0,
+"docTime" : 22276,
+"domTime" : 0,
+"score_cache" : 29,
+"score_cdn" : 34,
+"score_gzip" : 100,
+"score_cookies" : 82,
+"score_keep-alive" : 95,
+"score_minify" : 100,
+"score_combine" : 0,
+"score_compress" : 73,
+"score_etags" : 55,
+"gzip_total" : 947903,
+"gzip_savings" : 0,
+"minify_total" : 336065,
+"minify_savings" : 0,
+"image_total" : 846176,
+"image_savings" : 220856,
+"optimization_checked" : 1,
+"aft" : 0,
+"domElements" : 1430,
+"pageSpeedVersion" : 1.12,
+"title" : "Bedford + Bowery",
+"titleTime" : 1330,
+"loadEventStart" : 22302,
+"loadEventEnd" : 22394,
+"domContentLoadedEventStart" : 3920,
+"domContentLoadedEventEnd" : 4007,
+"lastVisualChange" : 23009,
+"browser_name" : "Internet Explorer",
+"browser_version" : "9.0.8112.16421",
+"server_count" : 1,
+"server_rtt" : 37,
+"adult_site" : 0,
+"fixed_viewport" : -1,
+"score_progressive_jpeg" : 17,
+"firstPaint" : 1963,
+"docCPUms" : 5538.036,
+"fullyLoadedCPUms" : 6505.242,
+"docCPUpct" : 25,
+"fullyLoadedCPUpct" : 26,
+"isResponsive" : -1,
+"date" : 1390900677,
+"SpeedIndexDT" : 9699,
+"SpeedIndex" : 9699,
+"VisuallyCompleteDT" : 23009,
+"visualComplete" : 23009,
+"renderDT" : 1993,
+"effectiveBps" : 82467,
+"effectiveBpsDoc" : 83344
 
 # Setup
 
