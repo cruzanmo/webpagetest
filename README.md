@@ -1,29 +1,30 @@
-webpagetest
-===========
-
-create useful graphs with webpagetest
-
 # Overview
 
-*General Plan*
+### Goal
+- Maintain a loading time of less than 2 seconds by identifying and eliminating bottlenecks, and measuring web page loading time daily.
+
+### General Plan
 - Maintain list of URLs of pages to test.
 - launchd to run daily task that requests webpagetest for each url.
 - Save results to a local mongo db.
-- Create a useful graph to keep track of web page performance
+- Create a useful graph to keep track of web page performance.
+- Review graphs daily, prioritize development, alerts for any performance issues.
 
-#Setup
+## Understanding the data
 
-*Clone repo*
+# Setup
+
+### Clone repo
 - Assumes that you have this repo here: /Users/mcroney/_dev/webpagetest/
 - cd /Users/mcroney/_dev/webpagetest/
 - npm install
 
-*Wake up the machine*
+### Wake up the machine
 - sudo pmset repeat wakeorpoweron MTWRFSU 09:05:00
 - pmset -g sched
 - you can also do this in system settings > energy saver > schedule
 
-*Add mongo .plist file*
+### Add mongo .plist file
 - sudo nano /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - paste in:
 
@@ -62,7 +63,7 @@ create useful graphs with webpagetest
 </plist>
 
 
-*Add node app .plist file*
+### Add node app .plist file
 - sudo nano /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - paste in:
 
@@ -99,10 +100,11 @@ create useful graphs with webpagetest
 </dict>
 </plist>
 
-*unload the launchd files if you made changes*
+### unload the launchd files if you made changes
 - sudo launchctl unload /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - sudo launchctl unload /Library/LaunchAgents/com.webpagetest.performance.root.plist
 
-*load the launchd files (this may need to be done after a hard restart*
+### load the launchd files (this may need to be done after a hard restart
 - sudo launchctl load /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - sudo launchctl load /Library/LaunchAgents/com.webpagetest.performance.root.plist
+
