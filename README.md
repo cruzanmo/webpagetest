@@ -40,8 +40,8 @@
 
 ### Data added for each page
 - "page" :
--- "brand" : "Bedford + Bowery",
--- "type" : "homepage",
+-- "brand" : "Bedford + Bowery"
+-- "type" : "homepage"
 -- "url" : "http://bedfordandbowery.com/"
 
 ### All Data available through webpagetest API
@@ -131,7 +131,7 @@
 - sudo nano /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - paste in:
 
-'''
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -165,13 +165,13 @@
   </dict>
 </dict>
 </plist>
-'''
+```
 
 *Add node app .plist file*
 - sudo nano /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - paste in:
 
-'''
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -204,7 +204,7 @@
   </dict>
 </dict>
 </plist>
-'''
+```
 
 *unload & load the launchd files (may need to repeat on hard restart)*
 - sudo launchctl unload /Library/LaunchAgents/org.mongodb.mongod.root.plist
