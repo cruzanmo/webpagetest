@@ -232,8 +232,11 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
       {
         $project : {
           _id : 0,
+          pageBrand: '$page.brand',
+          pageType: '$page.type',
+          pageUrl: '$page.url',
           date: '$response.data.completed',
-          url: '$response.data.testUrl',
+          url: '$response.data.testUrl', //now redundant
           firstByte: '$response.data.run.firstView.results.TTFB',
           firstPaint: '$response.data.run.firstView.results.firstPaint',
           titleLoad: '$response.data.run.firstView.results.titleTime',
@@ -258,6 +261,13 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
       // Create graphs from data
       console.log('Creating useful graphs from mongodb data.');
       // Format HTML
+      /*
+      var htmlOutput = '<html><head><title>WebPageTest Results</title></head><body>' +
+        '<link href="stylesheets/simple-graph.css" media="all" rel="stylesheet" />' +
+        '<script>var JSONData = ' + JSON.stringify(results) + ';</script>' +
+        '<script src="javascripts/simple-graph.js"></script>' +
+        '</body></html>';
+      */
       var htmlOutput = '<html><head><title>WebPageTest Results</title></head><body>' +
         '<link href="stylesheets/simple-graph.css" media="all" rel="stylesheet" />' +
         '<script>var JSONData = ' + JSON.stringify(results) + ';</script>' +

@@ -603,3 +603,63 @@ Tue Jan 28 16:07:27.865 [signalProcessingThread] journalCleanup...
 Tue Jan 28 16:07:27.865 [signalProcessingThread] removeJournalFiles
 Tue Jan 28 16:07:28.106 [signalProcessingThread] shutdown: removing fs lock...
 Tue Jan 28 16:07:28.106 dbexit: really exiting now
+Fri Jan 31 09:10:03.465 [initandlisten] MongoDB starting : pid=30998 port=55555 dbpath=/data/db/ 64-bit host=MCroney-iMac-27.local
+Fri Jan 31 09:10:03.466 [initandlisten] 
+Fri Jan 31 09:10:03.466 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri Jan 31 09:10:03.466 [initandlisten] db version v2.4.7
+Fri Jan 31 09:10:03.466 [initandlisten] git version: 0161738abf06c1f067b56a465b706efd6f4bf2aa
+Fri Jan 31 09:10:03.466 [initandlisten] build info: Darwin bs-osx-106-x86-64-2.10gen.cc 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Fri Jan 31 09:10:03.466 [initandlisten] allocator: system
+Fri Jan 31 09:10:03.466 [initandlisten] options: { port: 55555 }
+Fri Jan 31 09:10:03.467 [initandlisten] journal dir=/data/db/journal
+Fri Jan 31 09:10:03.467 [initandlisten] recover : no journal files present, no recovery needed
+Fri Jan 31 09:10:03.484 [websvr] admin web console waiting for connections on port 56555
+Fri Jan 31 09:10:03.484 [initandlisten] waiting for connections on port 55555
+Fri Jan 31 09:15:33.684 [initandlisten] connection accepted from 127.0.0.1:49401 #1 (1 connection now open)
+Fri Jan 31 09:15:33.691 [conn1] end connection 127.0.0.1:49401 (0 connections now open)
+Fri Jan 31 09:15:33.693 [initandlisten] connection accepted from 127.0.0.1:49402 #2 (1 connection now open)
+Fri Jan 31 09:15:33.693 [initandlisten] connection accepted from 127.0.0.1:49403 #3 (2 connections now open)
+Fri Jan 31 09:15:33.694 [initandlisten] connection accepted from 127.0.0.1:49404 #4 (3 connections now open)
+Fri Jan 31 09:15:33.694 [initandlisten] connection accepted from 127.0.0.1:49405 #5 (4 connections now open)
+Fri Jan 31 09:15:33.694 [initandlisten] connection accepted from 127.0.0.1:49406 #6 (5 connections now open)
+Fri Jan 31 09:25:40.597 [conn2] end connection 127.0.0.1:49402 (4 connections now open)
+Fri Jan 31 09:25:40.597 [conn3] end connection 127.0.0.1:49403 (4 connections now open)
+Fri Jan 31 09:25:40.597 [conn4] end connection 127.0.0.1:49404 (2 connections now open)
+Fri Jan 31 09:25:40.597 [conn5] end connection 127.0.0.1:49405 (2 connections now open)
+Fri Jan 31 09:25:40.597 [conn6] end connection 127.0.0.1:49406 (0 connections now open)
+Sat Feb  1 09:15:21.467 [initandlisten] connection accepted from 127.0.0.1:63218 #7 (1 connection now open)
+Sat Feb  1 09:15:21.474 [conn7] end connection 127.0.0.1:63218 (0 connections now open)
+Sat Feb  1 09:15:21.476 [initandlisten] connection accepted from 127.0.0.1:63219 #8 (1 connection now open)
+Sat Feb  1 09:15:21.476 [initandlisten] connection accepted from 127.0.0.1:63220 #9 (2 connections now open)
+Sat Feb  1 09:15:21.477 [initandlisten] connection accepted from 127.0.0.1:63221 #10 (3 connections now open)
+Sat Feb  1 09:15:21.477 [initandlisten] connection accepted from 127.0.0.1:63222 #11 (4 connections now open)
+Sat Feb  1 09:15:21.477 [initandlisten] connection accepted from 127.0.0.1:63223 #12 (5 connections now open)
+Sat Feb  1 09:20:23.220 [conn8] end connection 127.0.0.1:63219 (4 connections now open)
+Sat Feb  1 09:20:23.220 [conn9] end connection 127.0.0.1:63220 (4 connections now open)
+Sat Feb  1 09:20:23.220 [conn10] end connection 127.0.0.1:63221 (2 connections now open)
+Sat Feb  1 09:20:23.220 [conn11] end connection 127.0.0.1:63222 (1 connection now open)
+Sat Feb  1 09:20:23.220 [conn12] end connection 127.0.0.1:63223 (1 connection now open)
+Sun Feb  2 09:15:57.891 [initandlisten] connection accepted from 127.0.0.1:63374 #13 (1 connection now open)
+Sun Feb  2 09:15:57.898 [conn13] end connection 127.0.0.1:63374 (0 connections now open)
+Sun Feb  2 09:15:57.900 [initandlisten] connection accepted from 127.0.0.1:63375 #14 (1 connection now open)
+Sun Feb  2 09:15:57.901 [initandlisten] connection accepted from 127.0.0.1:63376 #15 (2 connections now open)
+Sun Feb  2 09:15:57.901 [initandlisten] connection accepted from 127.0.0.1:63377 #16 (3 connections now open)
+Sun Feb  2 09:15:57.902 [initandlisten] connection accepted from 127.0.0.1:63378 #17 (4 connections now open)
+Sun Feb  2 09:15:57.902 [initandlisten] connection accepted from 127.0.0.1:63379 #18 (5 connections now open)
+Sun Feb  2 09:20:59.414 [conn14] end connection 127.0.0.1:63375 (4 connections now open)
+Sun Feb  2 09:20:59.414 [conn15] end connection 127.0.0.1:63376 (4 connections now open)
+Sun Feb  2 09:20:59.414 [conn16] end connection 127.0.0.1:63377 (2 connections now open)
+Sun Feb  2 09:20:59.414 [conn17] end connection 127.0.0.1:63378 (2 connections now open)
+Sun Feb  2 09:20:59.414 [conn18] end connection 127.0.0.1:63379 (0 connections now open)
+Mon Feb  3 09:15:12.391 [initandlisten] connection accepted from 127.0.0.1:63565 #19 (1 connection now open)
+Mon Feb  3 09:15:12.398 [conn19] end connection 127.0.0.1:63565 (0 connections now open)
+Mon Feb  3 09:15:12.400 [initandlisten] connection accepted from 127.0.0.1:63566 #20 (1 connection now open)
+Mon Feb  3 09:15:12.401 [initandlisten] connection accepted from 127.0.0.1:63567 #21 (2 connections now open)
+Mon Feb  3 09:15:12.401 [initandlisten] connection accepted from 127.0.0.1:63568 #22 (3 connections now open)
+Mon Feb  3 09:15:12.401 [initandlisten] connection accepted from 127.0.0.1:63569 #23 (4 connections now open)
+Mon Feb  3 09:15:12.402 [initandlisten] connection accepted from 127.0.0.1:63570 #24 (5 connections now open)
+Mon Feb  3 09:20:14.069 [conn20] end connection 127.0.0.1:63566 (4 connections now open)
+Mon Feb  3 09:20:14.069 [conn21] end connection 127.0.0.1:63567 (4 connections now open)
+Mon Feb  3 09:20:14.069 [conn22] end connection 127.0.0.1:63568 (2 connections now open)
+Mon Feb  3 09:20:14.069 [conn23] end connection 127.0.0.1:63569 (2 connections now open)
+Mon Feb  3 09:20:14.070 [conn24] end connection 127.0.0.1:63570 (0 connections now open)
