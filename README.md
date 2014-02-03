@@ -15,12 +15,12 @@
 ### Data we are graphing
 
 *Page loading events -v2*
-1. First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
-2. "titleTime" - title displays in the browser
-3. Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
-4. Load Event Start = "loadEventStart" - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
-5. Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
-6. Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
+- First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
+- "titleTime" - title displays in the browser
+- Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
+- Load Event Start = "loadEventStart" - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
+- Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
+- Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
 
 *Page loading events -v1*
 - visuallyComplete (loaded and rendered)
@@ -131,6 +131,7 @@
 - sudo nano /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - paste in:
 
+'''
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -164,12 +165,13 @@
   </dict>
 </dict>
 </plist>
-
+'''
 
 *Add node app .plist file*
 - sudo nano /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - paste in:
 
+'''
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -202,6 +204,7 @@
   </dict>
 </dict>
 </plist>
+'''
 
 *unload & load the launchd files (may need to repeat on hard restart)*
 - sudo launchctl unload /Library/LaunchAgents/org.mongodb.mongod.root.plist
