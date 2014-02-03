@@ -14,7 +14,7 @@
 
 ### Data we are graphing
 
-*Page loading events -v2*
+**Page loading events -v2**
 - First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
 - "titleTime" - title displays in the browser
 - Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
@@ -22,7 +22,7 @@
 - Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
 - Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
 
-*Page loading events -v1*
+**Page loading events -v1**
 - visuallyComplete (loaded and rendered)
 - loaded = "loadTime" = "docTime"
 - docLoadEnd (Doc loaded)
@@ -33,7 +33,7 @@
 - firstPaint
 - firstByte
 
-*Downloads*
+**Downloads**
 - Bytes In (Doc) - The number of bytes downloaded before the Document Complete time
 - Requests (Doc) - The number of http(s) requests before the Document Complete time
 - Speed Index = "SpeedIndex" - The calculated Speed Index (only available when video capture is enabled)
@@ -127,7 +127,7 @@
 
 ### Add commands to launchd
 
-*Add mongo .plist file*
+**Add mongo .plist file**
 - sudo nano /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - paste in:
 
@@ -167,7 +167,7 @@
 </plist>
 ```
 
-*Add node app .plist file*
+**Add node app .plist file**
 - sudo nano /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - paste in:
 
@@ -206,7 +206,7 @@
 </plist>
 ```
 
-*unload & load the launchd files (may need to repeat on hard restart)*
+**unload & load the launchd files (may need to repeat on hard restart)**
 - sudo launchctl unload /Library/LaunchAgents/org.mongodb.mongod.root.plist
 - sudo launchctl unload /Library/LaunchAgents/com.webpagetest.performance.root.plist
 - sudo launchctl load /Library/LaunchAgents/org.mongodb.mongod.root.plist
