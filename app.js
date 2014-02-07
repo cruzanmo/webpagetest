@@ -227,6 +227,28 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
 
     */
 
+
+/*    **Page loading events -v2**
+    - First Byte = "TTFB" - The time until the first byte of the base page is returned (after following any redirects)
+    - "titleTime" - title displays in the browser
+    - Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
+    - Load Event Start = "loadEventStart" - browser reported time of the start of the load event from the W3C Navigation Timing
+    - Document Complete = "loadTime", "docTime" - The time until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
+    - Fully Loaded - "fullyLoaded" - The time until network activity finished after the onload event (all assets loaded)
+
+  **Stats**
+    - Bytes In (Doc) = "bytesInDoc" - The number of bytes downloaded before the Document Complete time
+      - Requests (Doc) = "requestsDoc" - The number of http(s) requests before the Document Complete time
+
+### Data added for each page
+    - "page" :
+    -- "brand" : "Bedford + Bowery"
+    -- "type" : "homepage"
+    -- "url" : "http://bedfordandbowery.com/"
+
+    */
+
+
     console.log('Query MongoDB.');
     db.collection('results').aggregate([
       {
@@ -237,15 +259,16 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
           pageUrl: '$page.url',
           date: '$response.data.completed',
           url: '$response.data.testUrl', //now redundant
-          firstByte: '$response.data.run.firstView.results.TTFB',
-          firstPaint: '$response.data.run.firstView.results.firstPaint',
-          titleLoad: '$response.data.run.firstView.results.titleTime',
-          docReadyStart: '$response.data.run.firstView.results.domContentLoadedEventStart',
-          docReadyEnd: '$response.data.run.firstView.results.domContentLoadedEventEnd',
-          docLoadStart: '$response.data.run.firstView.results.loadEventStart',
-          docLoadEnd: '$response.data.run.firstView.results.loadEventEnd',
-          loaded: '$response.data.run.firstView.results.fullyLoaded',
-          visuallyComplete: '$response.data.run.firstView.results.VisuallyCompleteDT'
+          firstByte: '$response.data.run.firstView.results.TTFB', //1
+          titleLoad: '$response.data.run.firstView.results.titleTime', //2
+          firstPaint: '$response.data.run.firstView.results.firstPaint', //3
+          loadEventStart: '$response.data.run.firstView.results.loadEventStart', //4
+          docComplete: '$response.data.run.firstView.results.docTime', //5
+          fullyLoaded: '$response.data.run.firstView.results.fullyLoaded', //6
+          visuallyComplete: '$response.data.run.firstView.results.VisuallyCompleteDT', //7 optional
+          // stats
+          bytesInDoc : '$response.data.run.firstView.results.bytesInDoc',
+          requestsDoc : '$response.data.run.firstView.results.requestsDoc'
         }
       },
       {
@@ -271,7 +294,7 @@ mongoClient.connect('mongodb://localhost:55555/webpagetest', {}, function(err,db
       var htmlOutput = '<html><head><title>WebPageTest Results</title></head><body>' +
         '<link href="stylesheets/simple-graph.css" media="all" rel="stylesheet" />' +
         '<script>var JSONData = ' + JSON.stringify(results) + ';</script>' +
-        '<script src="javascripts/simple-graph.js"></script>' +
+        '<script src="javascripts/simple-chart.js"></script>' +
         '</body></html>';
 
       // Save to file

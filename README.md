@@ -15,28 +15,16 @@
 ### Data we are graphing
 
 **Page loading events -v2**
-- First Byte = "TTFB" - The time from the start of navigation until the first byte of the base page is returned (after following any redirects)
+- First Byte = "TTFB" - The time until the first byte of the base page is returned (after following any redirects)
 - "titleTime" - title displays in the browser
 - Start Render = "firstPaint" or "render" - first non-white content was painted to the screen
-- Load Event Start = "loadEventStart" - The reported time of the start of the load event from the W3C Navigation Timing (if supported by the browser)
-- Document Complete = "loadTime", "docTime" - The time from the start of navigation until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
-- Fully Loaded - "fullyLoaded" - The time from the start of navigation until network activity finished after the onload event
+- Load Event Start = "loadEventStart" - browser reported time of the start of the load event from the W3C Navigation Timing
+- Document Complete = "loadTime", "docTime" - The time until the onload event was fired (as measured by WebPagetest, not Navigation Timing)
+- Fully Loaded - "fullyLoaded" - The time until network activity finished after the onload event (all assets loaded)
 
-**Page loading events -v1**
-- visuallyComplete (loaded and rendered)
-- loaded = "loadTime" = "docTime"
-- docLoadEnd (Doc loaded)
-- docLoadStart
-- docReadyEnd (DOM is ready)
-- docReadyStart
-- titleLoad
-- firstPaint
-- firstByte
-
-**Downloads**
-- Bytes In (Doc) - The number of bytes downloaded before the Document Complete time
-- Requests (Doc) - The number of http(s) requests before the Document Complete time
-- Speed Index = "SpeedIndex" - The calculated Speed Index (only available when video capture is enabled)
+**Stats**
+- Bytes In (Doc) = "bytesInDoc" - The number of bytes downloaded before the Document Complete time
+- Requests (Doc) = "requestsDoc" - The number of http(s) requests before the Document Complete time
 
 ### Data added for each page
 - "page" :
@@ -123,7 +111,7 @@
 ### Schedule Machine Wake Up
 - sudo pmset repeat wakeorpoweron MTWRFSU 09:05:00
 - pmset -g sched
-- you can also do this in system settings > energy saver > schedule
+- or you can do this in system settings > energy saver > schedule
 
 ### Add commands to launchd
 
