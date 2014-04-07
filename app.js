@@ -25,7 +25,7 @@ console.log(
 
 var testPages = [
 
-  // NYM: Check with product manager for more URLs
+  // NYM: URLs from Nick.
   {
     'brand': 'NY Mag',
     'type': 'homepage',
@@ -41,8 +41,108 @@ var testPages = [
     'type': 'article',
     'url': 'http://nymag.com/daily/intelligencer/2013/12/jp-morgan-eases-up-on-young-bankers.html'
   },
-
-  // Vultre: Confirmed with Eve
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/10/slideshow-21-glimpses-of-sandys-destruction.html
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/02/slideshow-every-westminster-dog-is-a-favorite.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/08/13-nyc-cycling-tips-citi-bike-tricks-gifs.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/03/miss-saturdays-march-madness-heres-a-gif-cap.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2009/11/8216cash_for_clunkers8217_mean.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2010/04/so_this_happened.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2011/11/ap-staff-scolded-for-tweeting-about-ows-arrests.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2012/11/exhaustive-collection-of-pundit-predictions.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/12/cuomo-2016-campaign.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/03/march-madness-memories-1964-championship.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/03/video-world-trade-center-skydive.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/01/richard-sherman-interview.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/10/debt-ceiling-and-the-conservative-bubble.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/02/i-crashed-a-wall-street-secret-society.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/07/questlove-trayvon-martin-and-i-aint-shit.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/06/naked-man-san-francisco-bart-subway-video.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/05/facts-are-in-and-paul-ryan-is-wrong.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2013/01/vine-celebrities-tyra-garcia-enrique-dyke-epps.html'
+  },
+  {
+    'brand': 'Daily Intel',
+    'type': 'article',
+    'url': 'http://nymag.com/daily/intelligencer/2014/02/best-worst-reactions-to-michael-sam-coming-out.html'
+  },
+  
+  // Vulture: Confirmed with Eve
   // For Vulture: homepage and articles. Article types: TV Recaps, Slideshows, and everything else.
   {
     'brand': 'Vulture',
