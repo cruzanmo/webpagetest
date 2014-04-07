@@ -107,6 +107,7 @@
 - Install dependencies: mongodb and node.js.
 - Clone this repo.
 - npm install
+- Obtain an appKey from webpagetest.org and save to /key.js
 
 ### Schedule Machine Wake Up
 - sudo pmset repeat wakeorpoweron MTWRFSU 09:05:00
