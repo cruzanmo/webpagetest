@@ -44,7 +44,7 @@ var testPages = [
   {
     'brand': 'Daily Intel',
     'type': 'article',
-    'url': 'http://nymag.com/daily/intelligencer/2013/10/slideshow-21-glimpses-of-sandys-destruction.html
+    'url': 'http://nymag.com/daily/intelligencer/2013/10/slideshow-21-glimpses-of-sandys-destruction.html'
   },
   {
     'brand': 'Daily Intel',
