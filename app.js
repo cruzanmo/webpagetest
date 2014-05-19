@@ -204,6 +204,18 @@ var testPages = [
     'brand': 'Bedford + Bowery',
     'type': 'article',
     'url': 'http://bedfordandbowery.com/2014/01/joe-galarraga-of-big-ups-is-ok-with-you-making-fun-of-his-musings-about-millennials/'
+  },
+
+  // Science of Us
+  {
+    'brand': 'Science of Us',
+    'type': 'homepage',
+    'url': 'http://nymag.com/scienceofus/'
+  },
+  {
+    'brand': 'Science of Us',
+    'type': 'article',
+    'url': 'http://nymag.com/scienceofus/2014/05/non-diet-diet.html'
   }
 
 ];
